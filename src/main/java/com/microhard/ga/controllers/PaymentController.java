@@ -1,25 +1,27 @@
 package com.microhard.ga.controllers;
 
+import com.microhard.ga.BasicDB;
+import com.microhard.ga.models.AssistantPayment;
 import com.microhard.ga.models.Payment;
-import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Controller;
+import org.springframework.http.*;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-@Controller("/payments")
+import java.util.Collections;
+
+@RestController("/payments")
 public class PaymentController {
 
     private RestTemplate restTemplate;
 
-    public PaymentController(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
+    private HttpHeaders httpHeaders;
+
+    public PaymentController() {
+
     }
 
-    @PostMapping
-    public void makePayment() {
-        restTemplate.postForEntity("https://team14.asseco.pl/retail-banking-swagger/api/payments/create_domestic_transfer",
-                new Payment(),
-                HttpStatus.OK);
-    }
+
 
 }

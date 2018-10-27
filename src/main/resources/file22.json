@@ -1,0 +1,17 @@
+{
+  "amount": 12,
+  "currency": "PLN",
+  "description": [
+    "Super"
+  ],
+  "intent": "realize",
+  "realizationDate": 1540632795053,
+  "recipientAccountNo": "80249000059984455911456320",
+  "recipientAddress": [
+    "ul. 12, Krakow"
+  ],
+  "recipientName": [
+    "Jakis typ"
+  ],
+  "remitterAccountId": "750888"
+}
