@@ -8,7 +8,6 @@ import java.util.Date;
 
 import static com.microhard.ga.BasicDB.*;
 
-//@Entity
 public class Payment {
 
     private int amount;
@@ -39,10 +38,7 @@ public class Payment {
         this.remitterAccountId = me.getAccountID();
 
         for (Receiver receiver : myPeers) {
-            System.out.println(receiver.getName());
-            System.out.println(assistantPayment.getName());
             if (receiver.getName().equals(assistantPayment.getName())) {
-                System.out.println(receiver);
                 String[] name = {receiver.getName() + " " + receiver.getSurname()};
                 this.recipientName = name;
                 this.recipientAccountNo = receiver.getAccountNumber();

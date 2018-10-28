@@ -1,6 +1,6 @@
 package com.microhard.ga;
 
-import com.microhard.ga.controllers.Me;
+import com.microhard.ga.models.Me;
 import com.microhard.ga.models.Receiver;
 
 import java.util.ArrayList;

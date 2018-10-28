@@ -1,4 +1,4 @@
-package com.microhard.ga.controllers;
+package com.microhard.ga.models;
 
 public class Me {
 
